@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(slide3.jpg);
+    background-size: cover;
+}
+.box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.8);
+}
+.box h1
+{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+.box .inputbox{
+   position: relative;
+}
+.box .inputbox input
+{
+background: transparent;
+width: 100%;
+padding: 10px 0;
+color: white;
+letter-spacing: 1px;
+font-size: 16px;
+border: none;
+border-bottom: 1px solid #fff;
+margin-bottom: 30px;
+outline: none;
+}
+.box .inputbox label{
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px 0;
+color: white;
+font-size: 16px;
+transition: .5s;
+pointer-events: none;
+}
+.box .inputbox input:focus~label,.box .inputbox input:valid~label
+{
+    top: -20px;
+    left: 0;
+    color: turquoise;
+    
+}
+.box input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #03a9f4;
+    border-radius: 8px;
+}
+
+/*---------------------vertcal-bar-------------------*/
+.vertical-bar
+{
+    position: absolute;;
+    top: 0;
+    left: 0;
+    background: #000;
+   height: 100%;
+}
+.search-icons
+{
+    height: 60%;
+    width: 70px;
+}
+.search-icons .fa
+{
+    color: #fff;
+    margin: 45px 23px;
+    display: block;
+    cursor: pointer;
+}
+.social-icons
+{
+    background: yellow;
+    height: 35%;
+    width: 70px;
+    padding-top: 27%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    
+}
+.social-icons .fa
+{
+  margin: 15px 23px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
